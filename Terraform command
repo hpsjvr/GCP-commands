@@ -1,0 +1,61 @@
+What is terraform init and what it does?
+The terraform init command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration
+
+what is modules in terraform? -->
+A module is a container for multiple resources that are used together. Every Terraform configuration has at least one module, known as its root module, which consists of the resources defined in the . tf files in the main working directory.
+
+what is terraform variable?
+Variables in Terraform are a great way to define centrally controlled reusable values. The information in Terraform variables is saved independently from the deployment plans, which makes the values easy to read and edit from a single file.
+
+what is stat file in terraform?
+Terraform stores information about your infrastructure in a state file. This state file keeps track of resources created by your configuration and maps them to real-world resources.
+
+where do you save the state file?
+The state file is commonly stored either on a local machine, in a remote storage location (like a storage account in Azure, or S3 bucket in AWS), or in Terraform cloud. By default, it is stored on the local machine and is named “terraform.
+
+why use main.tf?
+Why do we use modules in terraform?
+A Terraform module allows you to create logical abstraction on the top of some resource set. In other words, a module allows you to group resources together and reuse this group later, possibly many times
+
+what is use of var.tf?
+A variables.tf file is used to define the variables type and optionally set a default value. A terraform. tfvars file is used to set the actual values of the variables.
+what is workspace in terraform?
+In Terraform CLI, workspaces are separate instances of state data that can be used from the same working directory. You can use workspaces to manage multiple non-overlapping groups of resources with the same configuration. Every initialized working directory has at least one workspace.
+
+Can we move terraform state file?
+The terraform state mv command moves resources from one state file to another. You can also rename resources with mv . The move command will update the resource in state, but not in your configuration file.
+
+What is provider and what is their role in terraform?
+A provider is a Terraform plugin that allows users to manage an external API. Provider plugins like the AWS provider or the cloud-init provider act as a translation layer that allows Terraform to communicate with many different cloud providers, databases, and services.
+
+why we used provisioner in Terraform?
+Provisioners are used to execute scripts on a local or remote machine as part of resource creation or destruction. Provisioners can be used to bootstrap a resource, cleanup before destroy, run configuration management, etc.
+
+what is terraform statefile lock and why we used it?
+If supported by your backend, Terraform will lock your state for all operations that could write state. This prevents others from acquiring the lock and potentially corrupting your state. State locking happens automatically on all operations that could write state. You won't see any message that it is happening.
+what is terraform import and why we use it?
+The terraform import command is used to import existing infrastructure. The command currently can only import one resource at a time. This means you can't yet point Terraform import to an entire collection of resources such as an AWS VPC and import all of it.
+what is terraform cloud?
+Terraform Cloud is HashiCorp's managed service offering. It eliminates the need for unnecessary tooling and documentation for practitioners, teams, and organizations to use Terraform in production. Provision infrastructure in a remote environment that is optimized for the Terraform workflow
+
+what is terraform sentinel?
+Terraform enforces Sentinel policies between the plan and apply phases of a run, preventing out of policy infrastructure from being provisioned. Unless overridden by an authorized user, only plans that pass all Sentinel policies checked against them are allowed to proceed to the apply step.
+
+what is provisioner in Terraform?
+Provisioners are used to execute scripts on a local or remote machine as part of resource creation or destruction. Provisioners can be used to bootstrap a resource, cleanup before destroy, run configuration management, etc.
+
+difference between local-exec and remote-exec in terraform?
+For example, if we want to write EC2 instance IP address to a file, then we can use below local-exec provisioner with our EC2 resource and save it locally in a file. remote-exec provisioner helps invoke a script on the remote resource once it is created.
+
+what is terraform module and what is purpose to use it?
+A Terraform module is a collection of standard configuration files in a dedicated directory. Terraform modules encapsulate groups of resources dedicated to one task, reducing the amount of code you have to develop for similar infrastructure components.
+what is terraform registry?
+For Terraform users, the Terraform Registry enables the distribution of Terraform modules, which are reusable configurations. The Terraform Registry acts as a centralized repository for module sharing, making modules easier to discover and reuse
+
+what is output and why use in terraform?
+Terraform output values allow you to export structured data about your resources. You can use this data to configure other parts of your infrastructure with automation tools, or as a data source for another Terraform workspace. Outputs are also necessary to share data from a child module to your root module
+what is expression?
+Expressions can be used in a number of places in the Terraform language, but some contexts limit which expression constructs are allowed, such as requiring a literal value of a particular type or forbidding references to resource attributes.
+
+what is terraform validate?
+The terraform validate command validates the configuration files in a directory, referring only to the configuration and not accessing any remote services such as remote state, provider APIs, etc.
