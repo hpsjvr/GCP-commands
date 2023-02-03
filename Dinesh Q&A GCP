@@ -1,0 +1,143 @@
+
+)Compute Engine
+
+Ans-Google Compute Engine (GCE) is an infrastructure as a service (IaaS) offering that allows clients to run workloads on Google's physical hardware.
+Google Compute Engine provides a scalable number of virtual machines (VMs) to serve as large compute clusters for that purpose.
+2)What type of storage in GCP
+Standard Storage Nearline Storage, Cold line Storage Archive Storage 
+3)what is difference b/w regional and multiregional
+
+Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. 
+In order to deploy fault-tolerant applications that have high availability, 
+Google recommends deploying applications across multiple zones and multiple regions.
+
+
+KMS- Key Management Service- 
+How do I create a KMS key in GCP?
+Create a key ring
+Go to the Key Management page in the Google Cloud console. Go to the Key Management page.
+Click Create key ring.
+In the Key ring name field, enter the desired name for your key ring.
+From the Key ring location dropdown, select a location like "us-east1" .
+Click Create.
+
+4)what is CDN- Content Delivery Network
+uses Google's global edge network to serve content closer to users, which accelerates your websites and applications.
+Cloud CDN works with the global external HTTP(S) load balancer or the global external HTTP(S) load balancer (classic) to deliver content to your users.
+
+5)what is diff b/w static and block storage --> cloud blucket / disk block
+
+What is block storage in GCP?
+Block storage for flexible, fast access
+Block storage is a form of cloud storage that is used to store data, often on storage area networks (SANs). 
+Data is stored in blocks, with each block stored separately based on the efficiency needs of the SAN.
+
+Static Storage- 
+Every small-business owner should have a domain name and website—they are the foundation of your brand and your method to communicate with potential customers.
+
+Your domain name and website are one of the primary ways that people find your business, discover what products and services you offer, find your contact details, and even transact business with you (e-commerce transactions).
+
+If you're only starting your business now, then you're not expecting very much traffic, so you want to host a simple website.
+You can do that in Google Cloud, which makes the process very quick, easy, and inexpensive.
+6)can we use storage(like S3) as hard drive for VM? - A
+7)type of load balancer
+External load balancers distribute traffic coming from the internet to your Google Cloud Virtual Private Cloud (VPC) network. ...
+Internal load balancers distribute traffic to instances inside of Google Cloud.
+Global external HTTP(S) load balancer.
+Global external HTTP(S) load balancer (classic)
+Regional external HTTP(S) load balancer.
+Internal HTTP(S) load balancer.
+
+8)what is difference b/w frontend and backend load balancing?
+A front-end load balancer is a server that uses a virtual IP address to accept requests from a client. 
+It determines which reverse proxy server is most suitable to handle the request and forwards it to the appropriate reverse proxy server.
+Incoming requests from the same client are forwarded to the same server. GTM (Global Traffic Manager) LTM( Local Traffic Manager)
+
+Back end Load Balancer- 
+The load balancer routes incoming traffic to these backend servers based on the policies you specified for the backend set.
+9)what are the health check
+Google Cloud provides health checks to determine if backends respond to traffic. 
+Note: In addition to load balancing, you can use global health checks with application-based autohealing for managed instance groups.
+
+10)What is managed Instance Group?
+Managed instance groups (MIGs) let you operate apps on multiple identical VMs.
+You can make your workloads scalable and highly available by taking advantage of automated MIG services,
+including: autoscaling, autohealing, regional (multiple zone) deployment, and automatic updating.
+11)how to set parameter in MIG? 6 fure
+12)what is microservices?
+App Engine
+Modern cloud-native applications are usually built as microservices using containers. When you use Google Cloud, you can easily deploy microservices
+using either the managed container service, Google Kubernetes Engine (GKE), or the fully managed serverless offering, Cloud Run.
+13)what is benefit of microservices on top of monolithic?
+Microservices allow a large application to be separated into smaller independent parts, with each part having its own realm of responsibility.
+To serve a single user request, a microservices-based application can call on many internal microservices to compose its response.
+
+14)what is diff b/w internal and external LB in respect to GCP
+Google Cloud Internal HTTP(S) Load Balancing is a proxy-based, regional Layer 7 load balancer that enables you to run and scale your services behind an internal IP address.
+
+15)how to create instance in compute engine
+16)what kind of information/requirement needed for build infrastructure
+
+Prerequisites.
+Set up GCP.
+Write configuration.
+Initialize the directory.
+Format and validate the configuration.
+Create infrastructure.
+Inspect state.
+
+Compute. The compute service enables compute and hosting the cloud. ...
+Storage and Database. ...
+Networking. ...
+Big Data. ...
+Developer Tools. ...
+Identity and Security. ...
+Internet of Things(IoT) ...
+Cloud AI.
+
+
+
+17)What is cool down period ?
+Specify how long it takes for your app to initialize from boot time until it is ready to serve. Cool down period  is also known as the application initialization period
+By default, the cool down period is 60 seconds. Actual initialization times vary because of numerous factors.
+We recommend that you test how long your application takes to initialize. 
+To do this, create an instance and time the startup process from when the instance becomes RUNNING until the application is ready.
+
+18)what is stabilization periods in GCP?
+Stabilization period
+For the purposes of scaling in, the autoscaler calculates the group's recommended target size based on peak load over the last 10 minutes. 
+These last 10 minutes are referred to as the stabilization period.
+19)type of google account 
+Google Account.
+Service account.
+Google group.
+Google Workspace account.
+Cloud Identity domain.
+All authenticated users.
+All users.
+20) You have a development project with appropriate IAM roles defined. You are creating a production project
+and want to have the same IAM roles on the new project, using the fewest possible steps. What should you
+do?
+need to get the mirror id for the user and provide the same access. 
+
+21) You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a
+dedicated configuration file. You want to follow Google’s recommended practices. Which method should
+you use? MIG. 
+22) Your development team needs a new Jenkins server for their project. You need to deploy the server using
+the fewest steps possible. What should you do?
+23) You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets
+and files in Cloud Storage. Which IAM roles should you grant your colleagues? storage admin 
+
+24) You need to monitor resources that are distributed over different projects in Google Cloud Platform.
+You want to consolidate reporting under the same Stackdriver Monitoring dashboard.
+
+25) You need to create a new billing account and then link it with an existing Google Cloud Platform project.
+What should you do? -- Org and billing admin..
+26) You deployed an App Engine application using gcloud app deploy, but it did not deploy to the intended
+project. You want to find out why this happened and where the application deployed. What should you do?
+27) Your company uses Cloud Storage to store application backup files for disaster recovery purposes. You
+want to follow Google’s recommended practices. Which storage option should you use? Archive storage
+28) You recently deployed a new version of an application to App Engine and then discovered a bug in the
+release. You need to immediately revert to the prior version of the application. What should you do?
+Immedidately revert that change and make it old version. 
+
