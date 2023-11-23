@@ -1,0 +1,146 @@
+
+
+1)Compute Engine
+2)What type of storage in GCP
+3)what is difference b/w regional and multiregional
+4)what is CDN
+5)what is diff b/w static and block storage --> cloud blucket / disk block
+6)can we use storage(like S3) as hard drive for VM? - A
+7)type of load balancer
+8)what is difference b/w frontend and backend load balancing?
+9)what are the health check
+10)What is managed Instance Group?
+11)how to set parameter in MIG? 6 fure
+12)what is microservices?
+13)what is benefit of microservices on top of monolithic?
+14)what is diff b/w internal and external LB in respect to GCP
+15)how to create instance in compute engine
+16)what kind of information/requirement needed for build infrastructure
+17)What is cool down period ?
+Specify how long it takes for your app to initialize from boot time until it is ready to serve. Cool down period  is also known as the application initialization period
+18)what is stabilization periods in GCP?
+19)type of google account 
+20) You have a development project with appropriate IAM roles defined. You are creating a production project
+and want to have the same IAM roles on the new project, using the fewest possible steps. What should you
+do?
+21) You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a
+dedicated configuration file. You want to follow Google’s recommended practices. Which method should
+you use?
+22) Your development team needs a new Jenkins server for their project. You need to deploy the server using
+the fewest steps possible. What should you do?
+23) You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets
+and files in Cloud Storage. Which IAM roles should you grant your colleagues?
+24) You need to monitor resources that are distributed over different projects in Google Cloud Platform. You
+want to consolidate reporting under the same Stackdriver Monitoring dashboard.
+25) You need to create a new billing account and then link it with an existing Google Cloud Platform project.
+What should you do? -- Org and billing admin..
+26) You deployed an App Engine application using gcloud app deploy, but it did not deploy to the intended
+project. You want to find out why this happened and where the application deployed. What should you do?
+27) Your company uses Cloud Storage to store application backup files for disaster recovery purposes. You
+want to follow Google’s recommended practices. Which storage option should you use?
+28) You recently deployed a new version of an application to App Engine and then discovered a bug in the
+release. You need to immediately revert to the prior version of the application. What should you do?
+
+Terraform:
+Terraform:
+What is terraform init and what it does?
+what is modules in terraform? -->
+what is terraform variable?
+what is stat file in terraform?
+where do you save the state file
+why use main.tf
+what is use of var.tf 
+what is workspace in terraform?
+Can we move terraform state file?
+What is provider and what is their role in terraform?
+why we used provisioner in Terraform?
+what is terraform statefile lock and why we used it?
+what is terraform import and why we use it?
+what is terraform cloud?
+what is terraform sentinel?
+what is provisioner in Terraform?
+difference between local-exec and remote-exec in terraform?
+what is terraform module and what is purpose to use it?
+what is terraform registry?
+what is output and why use in terraform?
+what is expression?
+what is terraform validate?
+
+
+Python:
+what is list?
+what is string?
+what is benefit of using python?
+what is dictionary?
+
+Ansible:
+what kind of module used in ansible?
+where you create role vs playbook vs task in ansible?
+what is role and module?
+what is difference b/w role and module?
+what is playbook and what it contents?
+what is inventory? --> 
+type of inventory?
+how dynamic inventory work?
+What is module and what is use of it?
+what kind of template used in ansible
+what is group and why used
+what is dynamic inventory
+used any filter in ansible?
+what type of variables used in ansible?
+What is order of precedence for variables?
+what is idempotency?
+what template in ansible and what is use of it?
+what key word used to iterate in ansible? 
+with_item in  ansible?
+difference b/w loop and with_item?
+what is with_together?
+how to secure password in ansible?
+difference b/w git pull and gitfetch
+how to resolve merge conflict?
+what is VPC and how to open firewall?
+what is route table?
+what is DNS and waht is use of DNS?
+how it works?
+what is load balancer and how it works?
+how many types of load balancer algorithm?
+make sure host/server is running and some processs runing and update config file in /etc/host
+ping ip, ps -ef process name, reg is+ to get accurate value and then replace using sed command 
+what is include role?
+what is import task?
+what is interpolation---
+Ansible dictionary with item?
+
+Jenkins:
+what is resource, source, var, and what is their use in shared library?
+what is shared library and what is their structue and how to use them?
+what is diff b/w source and resource
+where to store secret/creds under jenkins?
+what other options to store secret for jenkins?
+what kind of migration services for data migration from onpremise to Cloud?
+what is scripted pipeline
+what is declarative pipeline
+what is difference between declarive and scripted?
+what kind of pipeline you handled
+how to differentiate between scripted and declarative pipeline
+can we call shared library from scripted and declarative pipeine.
+the directory where will you store your library?
+what is directory structure for shared library
+how to call variable in jenkins file/pipeline from shared library
+var can be automatically called in jenkins file/pipeline.
+how to push configuration changes to your pod?
+how did you manage to create playbook?
+what is purpose of handler?
+how do you manage variables and precedence?
+what is iterpolation and idempotance in Ansible?
+how jenkins job trigger automatically
+what is SCM polling in Jenkins?
+
+
+
+o GKE, Compute, Migration, Network Security, Cloud IAM
+o Cloud Storage, Cloud SQL, Big Query, Composer, Data Proc
+o Load balancers
+o VPC, Firewalls, VPN Gateways
+o Docker/Kubernetes
+o Harness, Jfrog, GitHub for CI/CD - Exposure to setting up the CICD Pipeline for both application and Infrastructure using Jenkins, Terraform Atlantis, and terraform Cloud.
